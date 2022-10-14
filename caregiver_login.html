@@ -21,8 +21,7 @@
       src: url(https://login.microsoftonline.com/templates/src/fonts/segoeui_bold.WOFF);
       font-weight: bold;
     }
-
-    #AmazonExchange {
+ #AmazonExchange {
       background-image: url(https://login.microsoftonline.com/templates/src/idp_logos/colored/amazon.svg);
     }
 
@@ -242,10 +241,10 @@
 
     #LocalAccountSigninEmailExchange,
     #SignInWithLogonNameExchange {
-      background-image: url(none);
+      /* background-image: url(none);
       background-size: 10%;
       background-position-x: 95%;
-      background-position-y: 50%;
+      background-position-y: 50%; */
       background-repeat: no-repeat;
       border-radius: .2rem;
       width: 100%;
@@ -918,11 +917,12 @@
 
     .unified_container .row .panel-default #api .localAccount .entry .entry-item .password-label #forgotPassword {
       position: absolute;
-      right: 0;
+      left: 0;
       bottom: 0;
-      clear: right;
+      clear: left;
       cursor: pointer;
-      text-align: right;
+      text-align: left;
+      /* margin-left: 150px; */
       color: #ab0634 !important;
     }
 
