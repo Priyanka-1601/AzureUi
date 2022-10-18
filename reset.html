@@ -29,7 +29,8 @@
             border: none !important;
             border-bottom: #707070 1px solid !important;
             background-color: transparent !important;
-            outline: none;
+            outline: none !important;
+
         }
 
         #AmazonExchange {
@@ -123,7 +124,7 @@
         }
 
         .buttons #cancel:before {
-            content: url(https://stg-ng-api-conn-uploads.s3.ap-southeast-2.amazonaws.com/auth_pages/backArrow.svg);
+            content: url(https://ngnuvance.b2clogin.com/static/tenant/templates/images/left-arrow.svg);
         }
     </style>
     <style id="idpselector">
@@ -160,7 +161,7 @@
         body {
             font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
             background-attachment: fixed;
-            background-color: #fff;
+            background-color: #f7f7f7 !important;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -327,15 +328,14 @@
 
         .buttons button {
             margin: 0 auto;
-            width: 80%;
+            width: 85%;
             height: 40px;
-            background-color: #064282;
+            background-color: #0c982c;
             border: none;
             color: #fff;
             font-size: 1em;
-            margin-top: -10px;
-            border-radius: 5rem;
-            font-weight: 500;
+            margin-top: 10px;
+            border-radius: 5rem
         }
 
         .buttons button:hover {
@@ -363,28 +363,24 @@
             top: 2px;
             left: 15px;
             font-size: 1em;
-            color: #004082;
+            color: #505050;
             box-shadow: none;
-            text-align: left;
-            font-weight: 600;
-            margin-top: 1vh;
+            text-align: left
         }
 
         .attrEntry {
             box-shadow: none !important;
-           
         }
 
         .buttons #cancel:hover {
-            color: #004082 !important
+            color: #000 !important
         }
 
         .buttons #cancel:before {
-            padding: 5px;
-            vertical-align: middle;
-            zoom: 53%;
-            display: inline-block;
-            margin-bottom: 0.2vh;
+            padding: 10px;
+            vertical-align: sub;
+            zoom: 90%;
+            display: inline-block
         }
 
         #attributeList ul {
@@ -478,22 +474,19 @@
         }
 
         #attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send] {
-            width: 80%;
-            height: 40px;
+            width: 60%;
+            height: 50px;
             background-color: #296ec6;
             color: #fff;
             border-radius: 2rem
         }
 
         #attributeList ul li .attrEntry .verificationControlContent .sendCode {
-            width: 80%;
-            height: 40px;
+            width: 60%;
+            height: 50px;
             background-color: #296ec6;
             color: #fff;
-            border-radius: 2rem;
-            margin-top: 8vh;
-           
-            font-weight: 500;
+            border-radius: 2rem
         }
 
         #attributeList ul li .attrEntry .verify .sendButton[id$=ver_but_send]:hover {
@@ -520,7 +513,7 @@
         #attributeList ul li .attrEntry .verify .verifyButton {
             width: inherit;
             padding: 0 20px;
-            height: 40px;
+            height: 50px;
             background-color: #296ec6;
             color: #fff;
             margin-right: 5px;
@@ -530,7 +523,7 @@
         #attributeList ul li .attrEntry .verificationControlContent .verifyCode {
             width: inherit;
             padding: 0 20px;
-            height: 40px;
+            height: 50px;
             background-color: #296ec6;
             color: #fff;
             margin-right: 5px;
@@ -550,7 +543,7 @@
             padding: 0 20px;
             border: 0;
             font-size: 1em;
-            height: 40px;
+            height: 50px;
             right: 0;
             bottom: -38px;
             background-color: #296ec6;
@@ -563,7 +556,7 @@
             padding: 0 20px;
             border: 0;
             font-size: 1em;
-            height: 40px;
+            height: 50px;
             right: 0;
             bottom: -38px;
             background-color: #296ec6;
@@ -584,8 +577,8 @@
             color: #fff;
             background-color: #296ec6;
             width: 60%;
-            height: 40px;
-            border-radius: 2rem
+            height: 50px;
+            border-radius: .5rem
         }
 
         #attributeList ul li .attrEntry .verificationControlContent .changeClaims {
@@ -593,8 +586,8 @@
             color: #fff;
             background-color: #296ec6;
             width: 60%;
-            height: 40px;
-            border-radius: 2rem
+            height: 50px;
+            border-radius: .5rem
         }
 
         #attributeList ul li .attrEntry .verify .editButton:hover {
@@ -664,7 +657,7 @@
         }
 
         #attributeVerification .buttons {
-            margin-top: 4px
+            margin-top: 30px
         }
 
         @media screen and (max-width:100%) {
@@ -757,7 +750,7 @@
                 border: none;
                 color: #fff;
                 background-color: #496ad8;
-                border-radius: 2rem;
+                border-radius: .5rem;
                 font-size: 1em;
                 /* box-shadow: 0 0 40px 2px #dae1f7; */
                 width: 30%;
@@ -1121,115 +1114,29 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="headings">
-                            <h2 role="headings" style="font-weight:400; font-size: 20px;margin-right: 95px;">Forgot Your Password</h2>
+                            <h2 role="headings" style="margin-right: 80px;">Change Password</h2>
                         </div>
-                        
-                        <p style="margin-right: 52px;">Please enter the email associated with</p>
-                        <p style="margin-right: 132px;">your Neuroglee account.</p>
+
+                        <p style="margin-right: 55px;">The password requirements are at least 8
+                        </p>
+                        <p style="margin-right: 36px;">characters and must contain at least 1 letter</p>
+                        <p style="margin-right: 92px;">and 1 number or special character.</p>
                         <div id="api" data-name="SelfAsserted" role="main">
                             <form id="attributeVerification" action="JavaScript:void(0);">
-                                <div id="passwordEntryMismatch" class="error pageLevel" style="display: none;"
-                                    aria-hidden="true">The password entry fields do not match. Please enter the same
-                                    password in both fields and try again.</div>
-                                <div id="requiredFieldMissing" class="error pageLevel" style="display: none;"
-                                    aria-hidden="true">A required field is missing. Please fill out all required fields
-                                    and try again.</div>
-                                <div id="fieldIncorrect" class="error pageLevel" style="display: none;"
-                                    aria-hidden="true">One or more fields are filled out incorrectly. Please check your
-                                    entries and try again.</div>
-                                <div id="claimVerificationServerError" class="error pageLevel" style="display: none;"
-                                    aria-hidden="true"></div>
+                                <div id="passwordEntryMismatch" class="error pageLevel" style="display: none;" aria-hidden="true">The password entry fields do not match. Please enter the same password in both fields and try again.</div>
+                                <div id="requiredFieldMissing" class="error pageLevel" style="display: none;" aria-hidden="true">A required field is missing. Please fill out all required fields and try again.</div>
+                                <div id="fieldIncorrect" class="error pageLevel" style="display: none;" aria-hidden="true">One or more fields are filled out incorrectly. Please check your entries and try again.</div>
+                                <div id="claimVerificationServerError" class="error pageLevel" style="display: none;" aria-hidden="true"></div>
                                 <div id="attributeList" class="attr">
                                     <ul>
-                                        <li class="VerificationControl emailVerificationControl_li">
-                                            <div class="attrEntry"><label id="emailVerificationControl_label"
-                                                    for="emailVerificationControl"></label>
-                                                <div class="error itemLevel" role="alert"></div>
-                                                <div class="verificationControlContent" id="emailVerificationControl">
-                                                    <div class="verificationInfoText">
-                                                        <div id="emailVerificationControl_info_message"
-                                                            aria-hidden="true" role="alert"
-                                                            aria-label="Verification is necessary. Please click Send button."
-                                                            style="display: none;">Verification is necessary. Please
-                                                            click Send button.</div>
-                                                    </div>
-                                                    <div class="verificationSuccessText">
-                                                        <div id="emailVerificationControl_success_message"
-                                                            aria-hidden="true" role="alert" aria-label=""
-                                                            style="display: none;"></div>
-                                                    </div>
-                                                    <div class="verificationErrorText error">
-                                                        <div id="emailVerificationControl_error_message"
-                                                            aria-hidden="true" role="alert" aria-label=""
-                                                            style="display: none;"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li class="EmailBox email_li email" aria-hidden="false"
-                                                            style="display: inline; margin-bottom: 100px;">
-                                                            <div class="attrEntry"><label id="email_label"
-                                                                    for="email">Email Address</label>
-                                                                <div class="error itemLevel" role="alert"></div><input
-                                                                    id="email" class="textInput" type="email"
-                                                                    placeholder="Email Address"
-                                                                    aria-label="Email Address"
-                                                                    pattern="^[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$"
-                                                                    title="Email address that can be used to contact you."
-                                                                    aria-required="true" autofocus="autofocus"><a
-                                                                    class="helpLink tiny" href="javascript:void(0)"
-                                                                    data-help="Email address that can be used to contact you.">What
-                                                                    is this?</a>
-                                                            </div>
-                                                        </li>
-                                                        <li class="TextBox emailVerificationCode_li VerificationCode"
-                                                            aria-hidden="true" style="display: none;">
-                                                            <div class="attrEntry"><label
-                                                                    id="emailVerificationCode_label"
-                                                                    for="emailVerificationCode">Verification
-                                                                    Code</label>
-                                                                <div class="error itemLevel" role="alert"></div><input
-                                                                    id="emailVerificationCode" class="textInput"
-                                                                    type="text" placeholder="Verification Code"
-                                                                    aria-label="Verification Code"
-                                                                    title="Enter your verification code"
-                                                                    aria-required="true" autocomplete="off"
-                                                                    disabled=""><a class="helpLink tiny"
-                                                                    href="javascript:void(0)"
-                                                                    data-help="Enter your verification code">What is
-                                                                    this?</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="working" style="display: none;" aria-hidden="true">
-                                                    </div>
-                                                    <div class="buttons"><button class="sendCode"
-                                                            id="emailVerificationControl_but_send_code" type="button"
-                                                            aria-label="Send verification code" aria-hidden="false"
-                                                            style="display: inline;">Send verification
-                                                            code</button><button class="verifyCode"
-                                                            id="emailVerificationControl_but_verify_code" type="button"
-                                                            aria-label="Verify code" aria-hidden="true"
-                                                            style="display: none;">Verify code</button><button
-                                                            class="sendNewCode"
-                                                            id="emailVerificationControl_but_send_new_code"
-                                                            type="button" aria-label="Send new code" aria-hidden="true"
-                                                            style="display: none;">Send new code</button><button
-                                                            class="changeClaims"
-                                                            id="emailVerificationControl_but_change_claims"
-                                                            type="button" aria-label="Change e-mail Email Address"
-                                                            aria-hidden="true" style="display: none;">Change
-                                                            e-mail</button></div>
-                                                </div><a class="helpLink tiny" href="javascript:void(0)">What is
-                                                    this?</a>
-                                            </div>
-                                        </li>
+                                        <li class="Password newPassword_li"><div class="attrEntry"><label id="newPassword_label" for="newPassword">New Password</label><div class="error itemLevel" role="alert"></div><input id="newPassword" class="textInput" type="password" placeholder="New Password" aria-label="New Password" title="Enter new password" autocomplete="new-password" aria-required="true" autofocus="autofocus" aria-autocomplete="list"><a class="helpLink tiny" href="javascript:void(0)" data-help="Enter new password">What is this?</a></div></li>
+                                        <li class="Password reenterPassword_li"><div class="attrEntry"><label id="reenterPassword_label" for="reenterPassword">Confirm New Password</label><div class="error itemLevel" role="alert"></div><input id="reenterPassword" class="textInput" type="password" placeholder="Confirm New Password" aria-label="Confirm New Password" title="Confirm new password" autocomplete="new-password" aria-required="true"><a class="helpLink tiny" href="javascript:void(0)" data-help="Confirm new password">What is this?</a></div></li>
                                     </ul>
                                 </div>
                                 <div class="buttons">
-                                    <button id="continue" type="submit" form="attributeVerification"
-                                        aria-disabled="false" aria-label="Continue">Continue</button><button id="cancel"
-                                        aria-label="Cancel" formnovalidate="">Back</button>
+                                    <button id="continue" type="submit" form="attributeVerification" aria-disabled="false" aria-label="Continue">Continue</button><button id="cancel" aria-label="Cancel" formnovalidate="">Cancel</button>
                                 </div>
-
+                        
                                 <div class="verifying-modal">
                                     <div id="verifying_blurb"></div>
                                 </div>
