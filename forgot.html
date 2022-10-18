@@ -1241,5 +1241,12 @@
         </div>
     </div>
 </body>
-
+<script>
+    let continuebotton = document.getElementById("continue")
+    function Trigger() {
+        if (document.getElementById("emailVerificationControl_but_verify_code").style.getPropertyValue("display")!=="none"){
+            continuebotton.style.display = "none"
+        } else {continuebotton.style.display = "block"}}
+        let interval = setInterval(Trigger, 400);
+     </script>
 </html>
